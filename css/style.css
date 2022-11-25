@@ -18,6 +18,8 @@ body {
 #cards {
     background-color: hsl(212, 24%, 14%);
     border-radius: 20px;
+    transform-style: preserve-3d;
+    transition: all .8s ease;
 }
 
 #main-img-card {
@@ -104,6 +106,7 @@ p {
 
 #secundary-card {
     display: none;
+    transform: rotateY(180deg);
 }
 
 .center {
@@ -121,6 +124,10 @@ p {
     font-size: .8rem;
     padding: 5px;
     color: hsl(25, 97%, 53%);
+}
+
+.flipCard {
+    transform: rotateY(180deg);
 }
 
 @media screen and (max-width: 500px) {
