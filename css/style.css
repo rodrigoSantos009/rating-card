@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(216, 12%, 8%);
+    color: white;
+    font-family: 'Overpass', sans-serif;
+}
+
+#cards {
+    background-color: hsl(212, 24%, 14%);
+    border-radius: 20px;
+}
+
+#main-img-card {
+    background-color: hsl(212, 17%, 17%);
+    border-radius: 50%;
+    padding: 1em;
+}
+
+#card #main-card,
+#secundary-card {
+    width: 420px;
+    height: 410px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+#card #main-card {
+    display: flex;
+}
+
+h1,
+h2 {
+    font-weight: 700;
+}
+
+p {
+    font-size: 1rem;
+    color: hsl(216, 12%, 54%);
+    font-weight: 400;
+}
+
+#main-rating-card {
+    display: flex;
+    justify-content: space-between;
+}
+
+#main-rating-card p {
+    background-color: hsl(212, 17%, 17%);
+    text-align: center;
+    border-radius: 50%;
+    width: 57px;
+    height: 55px;
+    line-height: 55px;
+    color: hsl(0, 0%, 100%);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: .3s all ease-in-out;
+}
+
+#main-rating-card p:hover {
+    background-color: hsl(25, 97%, 53%);
+}
+
+.selected {
+    background-color: hsl(217, 12%, 63%) !important;
+    color: hsl(0, 0%, 100%);
+}
+
+#submit-card-button {
+    width: 100%;
+}
+
+#button {
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    color: hsl(0, 0%, 100%);
+    font-size: 1rem;
+    letter-spacing: 5px;
+    background-color: hsl(25, 97%, 53%);
+    cursor: pointer;
+    transition: .3s all ease-in-out;
+}
+
+#button:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+
+#secundary-card {
+    display: none;
+}
+
+.center {
+    text-align: center;
+}
+
+#rated-secundary-card {
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 30px;
+    background-color: hsla(216, 12%, 54%, 0.326);
+}
+
+#rated-secundary-card p {
+    font-size: .8rem;
+    padding: 5px;
+    color: hsl(25, 97%, 53%);
+}
+
+@media screen and (max-width: 500px) {
+
+    #card #main-card,
+    #secundary-card {
+        width: 340px;
+        height: 400px;
+    }
+
+    #title-card-principal h1 {
+        font-size: 1.7rem;
+    }
+
+    #main-rating-card p {
+        width: 50px;
+        height: 48px;
+        line-height: 48px;
+    }
+
+    #main-message-card p {
+        font-size: .8rem;
+    }
+
+    #rated-secundary-card p {
+        font-size: .6rem;
+    }
+
+    #secundary-message-card p {
+        font-size: .9rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+
+    #card #main-card,
+    #secundary-card {
+        width: 340px;
+        height: 400px;
+    }
+
+    #main-rating-card p {
+        width: 47px;
+        height: 45px;
+        line-height: 45px;
+    }
+}

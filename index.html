@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;1,700&display=swap");
+    </style>
+    <script src="/js/script.js" defer></script>
+  </head>
+  <body>
+    <div id="cards">
+      <div id="card">
+        <div id="main-card">
+            <span><img src="/images/icon-star.svg" alt="" id="main-img-card"/></span>
+          <div id="title-card-principal">
+            <h1>How did we do?</h1>
+          </div>
+          <div id="main-message-card">
+            <p>
+              Please let us know how we did with your support request. All
+              feedback is appreciated to help us improve our offering!
+            </p>
+          </div>
+          <div id="main-rating-card">
+            <p class="rating one">1</p>
+            <p class="rating two">2</p>
+            <p class="rating three">3</p>
+            <p class="rating four">4</p>
+            <p class="rating five">5</p>
+          </div>
+          <div id="submit-card-button">
+            <button type="submit" id="button">SUBMIT</button>
+          </div>
+        </div>
+        <div id="secundary-card">
+          <div id="secundary-img-card" class="center">
+            <img src="/images/illustration-thank-you.svg" alt="" />
+          </div>
+          <div id="rated-secundary-card" class="center">
+            <p>You selected <span id="rated-value"></span> out of 5</p>
+          </div>
+          <div id="thanks-card-secundary" class="center">
+            <h2>Thank you!</h2>
+          </div>
+          <div id="secundary-message-card" class="center">
+            <p>
+              We appreciate you taking the time to give a rating. If you ever
+              need more support, don’t hesitate to get in touch!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
